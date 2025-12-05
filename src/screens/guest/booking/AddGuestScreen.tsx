@@ -1,3 +1,3 @@
 // Re-export from parent directory
-export { AddGuestScreen } from '../../AddGuestScreen';
+export { AddGuestScreen } from '../AddGuestScreen';
 

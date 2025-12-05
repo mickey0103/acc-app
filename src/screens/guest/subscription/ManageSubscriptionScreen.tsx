@@ -1,3 +1,3 @@
 // Re-export from parent directory
-export { ManageSubscriptionScreen } from '../../ManageSubscriptionScreen';
+export { ManageSubscriptionScreen } from '../ManageSubscriptionScreen';
 

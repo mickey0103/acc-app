@@ -18,7 +18,7 @@ import {
   PaymentConfirmationScreen,
 } from '../screens/owner';
 import { useTheme } from '../theme/ThemeProvider';
-import { MarketplaceScreenEnhanced } from '@/screens/owner/MarketplaceScreenEnhanced';
+import { MarketplaceScreenEnhanced } from '../screens/owner/MarketplaceScreenEnhanced';
 
 const Stack = createNativeStackNavigator<OwnerStackParamList>();
 const Tab = createBottomTabNavigator<OwnerTabParamList>();

@@ -1,3 +1,3 @@
 // Re-export from parent directory
-export { ApprovedJobDetailScreen } from '../../ApprovedJobDetailScreen';
+export { ApprovedJobDetailScreen } from '../ApprovedJobDetailScreen';
 

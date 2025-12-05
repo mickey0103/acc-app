@@ -1,3 +1,3 @@
 // Re-export from parent directory
-export { SubscriptionConfirmationScreen } from '../../SubscriptionConfirmationScreen';
+export { SubscriptionConfirmationScreen } from '../SubscriptionConfirmationScreen';
 

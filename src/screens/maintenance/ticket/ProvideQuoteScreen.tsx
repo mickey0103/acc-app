@@ -1,3 +1,3 @@
 // Re-export from parent directory
-export { ProvideQuoteScreen } from '../../ProvideQuoteScreen';
+export { ProvideQuoteScreen } from '../ProvideQuoteScreen';
 
