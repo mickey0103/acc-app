@@ -2,16 +2,18 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaintenanceStackParamList, MaintenanceTabParamList } from './types';
-import { TicketsScreenEnhanced } from '../screens/maintenance/TicketsScreenEnhanced';
-import { JobsInProgressScreen } from '../screens/maintenance/JobsInProgressScreen';
-import { RoomsScreenEnhanced } from '../screens/maintenance/RoomsScreenEnhanced';
-import { ProfileScreen } from '../screens/maintenance/ProfileScreen';
-import { TicketDetailScreen } from '../screens/maintenance/TicketDetailScreen';
-import { ProvideQuoteScreen } from '../screens/maintenance/ProvideQuoteScreen';
-import { ApprovedJobDetailScreen } from '../screens/maintenance/ApprovedJobDetailScreen';
-import { AccessRoomScreen } from '../screens/maintenance/AccessRoomScreen';
-import { FixChecklistScreen } from '../screens/maintenance/FixChecklistScreen';
-import { JobCompletionScreen } from '../screens/maintenance/JobCompletionScreen';
+import {
+  TicketsScreen,
+  JobsInProgressScreen,
+  RoomsScreen,
+  ProfileScreen,
+  TicketDetailScreen,
+  ProvideQuoteScreen,
+  ApprovedJobDetailScreen,
+  AccessRoomScreen,
+  FixChecklistScreen,
+  JobCompletionScreen,
+} from '../screens/maintenance';
 import { useTheme } from '../theme/ThemeProvider';
 
 const Stack = createNativeStackNavigator<MaintenanceStackParamList>();
@@ -32,9 +34,9 @@ const MaintenanceTabs: React.FC = () => {
         },
       }}
     >
-      <Tab.Screen name="Tickets" component={TicketsScreenEnhanced} />
+      <Tab.Screen name="Tickets" component={TicketsScreen} />
       <Tab.Screen name="JobsInProgress" component={JobsInProgressScreen} />
-      <Tab.Screen name="Rooms" component={RoomsScreenEnhanced} />
+      <Tab.Screen name="Rooms" component={RoomsScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );

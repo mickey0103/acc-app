@@ -2,17 +2,18 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { HousekeepingStackParamList, HousekeepingTabParamList } from './types';
-import { RoomsScreen } from '../screens/housekeeping/RoomsScreen';
-import { MaintenanceRequestsScreen } from '../screens/housekeeping/MaintenanceRequestsScreen';
-import { HistoryScreen } from '../screens/housekeeping/HistoryScreen';
-import { ProfileScreen } from '../screens/housekeeping/ProfileScreen';
-import { HousekeepingDashboardScreen } from '../screens/housekeeping/HousekeepingDashboardScreen';
-import { MasterKeyScreen } from '../screens/housekeeping/MasterKeyScreen';
-import { PreCleanPhotosScreen } from '../screens/housekeeping/PreCleanPhotosScreen';
-import { CleaningChecklistScreen } from '../screens/housekeeping/CleaningChecklistScreen';
-import { MarkCleanSummaryScreen } from '../screens/housekeeping/MarkCleanSummaryScreen';
-import { BondClaimScreen } from '../screens/housekeeping/BondClaimScreen';
-import { CreateMaintenanceRequestScreen } from '../screens/housekeeping/CreateMaintenanceRequestScreen';
+import {
+  RoomsScreen,
+  MaintenanceRequestsScreen,
+  HistoryScreen,
+  ProfileScreen,
+  MasterKeyScreen,
+  PreCleanPhotosScreen,
+  CleaningChecklistScreen,
+  MarkCleanSummaryScreen,
+  BondClaimScreen,
+  CreateMaintenanceRequestScreen,
+} from '../screens/housekeeping';
 import { useTheme } from '../theme/ThemeProvider';
 
 const Stack = createNativeStackNavigator<HousekeepingStackParamList>();
@@ -33,7 +34,7 @@ const HousekeepingTabs: React.FC = () => {
         },
       }}
     >
-      <Tab.Screen name="Rooms" component={HousekeepingDashboardScreen} />
+      <Tab.Screen name="Rooms" component={RoomsScreen} />
       <Tab.Screen name="MaintenanceRequests" component={MaintenanceRequestsScreen} />
       <Tab.Screen name="History" component={HistoryScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
@@ -50,7 +51,6 @@ export const HousekeepingNavigator: React.FC = () => {
       }}
     >
       <Stack.Screen name="Tabs" component={HousekeepingTabs} />
-      <Stack.Screen name="HousekeepingDashboard" component={HousekeepingDashboardScreen} />
       <Stack.Screen name="MasterKey" component={MasterKeyScreen} />
       <Stack.Screen name="PreCleanPhotos" component={PreCleanPhotosScreen} />
       <Stack.Screen name="CleaningChecklist" component={CleaningChecklistScreen} />

@@ -2,21 +2,23 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { OwnerStackParamList, OwnerTabParamList } from './types';
-import { DashboardScreen } from '../screens/owner/DashboardScreen';
-import { InvestmentsScreen } from '../screens/owner/InvestmentsScreen';
-import { ApprovalsScreen } from '../screens/owner/ApprovalsScreen';
-import { MarketplaceScreen } from '../screens/owner/MarketplaceScreen';
-import { MarketplaceScreenEnhanced } from '../screens/owner/MarketplaceScreenEnhanced';
-import { ProfileScreen } from '../screens/owner/ProfileScreen';
-import { BalancePayoutScreen } from '../screens/owner/BalancePayoutScreen';
-import { InvestmentDetailScreen } from '../screens/owner/InvestmentDetailScreen';
-import { BuyROIExtrasScreen } from '../screens/owner/BuyROIExtrasScreen';
-import { BuyMarketingBoostsScreen } from '../screens/owner/BuyMarketingBoostsScreen';
-import { ApprovalDetailScreen } from '../screens/owner/ApprovalDetailScreen';
-import { MarketplaceInvestmentDetailScreen } from '../screens/owner/MarketplaceInvestmentDetailScreen';
-import { CheckoutScreen } from '../screens/owner/CheckoutScreen';
-import { PaymentConfirmationScreen } from '../screens/owner/PaymentConfirmationScreen';
+import {
+  DashboardScreen,
+  InvestmentsScreen,
+  ApprovalsScreen,
+  MarketplaceScreen,
+  ProfileScreen,
+  BalancePayoutScreen,
+  InvestmentDetailScreen,
+  BuyROIExtrasScreen,
+  BuyMarketingBoostsScreen,
+  ApprovalDetailScreen,
+  MarketplaceInvestmentDetailScreen,
+  CheckoutScreen,
+  PaymentConfirmationScreen,
+} from '../screens/owner';
 import { useTheme } from '../theme/ThemeProvider';
+import { MarketplaceScreenEnhanced } from '@/screens/owner/MarketplaceScreenEnhanced';
 
 const Stack = createNativeStackNavigator<OwnerStackParamList>();
 const Tab = createBottomTabNavigator<OwnerTabParamList>();
